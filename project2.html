@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="css" href="styles.css" />
+    <title>StartUP</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: black;
+        font-family: sans-serif, Arial;
+        flex-wrap: wrap;
+      }
+      /* navbar css */
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+
+        align-items: center;
+        padding: 15px 40px;
+        background-color: orange;
+        padding-left: 50px;
+      }
+      .nav-links {
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+      }
+      .nav-links li {
+        margin-left: 30px;
+      }
+      .nav-links li a {
+        color: black;
+        text-decoration: none;
+        font-size: 18px;
+        transition: color 0.3s;
+      }
+      .logo {
+        font-size: 24px;
+        font-weight: bold;
+        color: black;
+      }
+      .nav-links li a:hover {
+        color: white;
+      }
+
+      /* Introsection css */
+      .intro-text {
+        flex: 1;
+        padding-right: 50px;
+      }
+      .introsection {
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 60px;
+        min-height: 90vh;
+      }
+      .intro-header {
+        text-align: left;
+        margin: 50px;
+        font-size: 60px;
+        width: 700px;
+      }
+      .intro-content {
+        text-align: left;
+        margin: 50px;
+        font-size: 23px;
+        line-height: 1.6;
+        text-align: justify;
+        margin-bottom: 10px;
+      }
+      .login-btn,
+      .submit-btn {
+        padding: 15px 50px;
+        font-size: 20px;
+        color: #000;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        background-color: orange;
+        transition: 0.3s ease;
+        width: 300px;
+        margin: 50px;
+      }
+      .login-btn:hover,
+      .submit-btn:hover {
+        background-color: white;
+      }
+
+      .intro-img {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+      }
+      .intro-img img {
+        width: 500px;
+        height: 400px;
+        max-width: 500px;
+        border-radius: 10px;
+      }
+
+      /* contactus */
+      .contactus-form {
+        color: white;
+        text-align: center;
+        padding: 40px;
+      }
+      .contact-header {
+        color: orange;
+        font-size: 60px;
+        text-align: left;
+        margin: 50px;
+      }
+      form input {
+        width: 100%;
+        height: 60px;
+        border-radius: 50px;
+        margin: 20px;
+        font-size: 18px;
+        padding: 30px;
+        border: 2px solid orange;
+        background-color: black;
+      }
+      .num-city input {
+        width: 40%;
+        margin: 0px;
+      }
+      .table-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 40px;
+      }
+      table {
+        border-collapse: collapse;
+        width: 90%;
+        border: 1px solid #f5a623;
+        color: #f5a623;
+        border-radius: 10px;
+        padding: 100px;
+      }
+
+      th,
+      td {
+        border: 1px solid #f5a623;
+        padding: 12px 20px;
+        text-align: left;
+        padding-left:50px ;
+      }
+
+      th {
+        background-color: #000;
+        font-size: 1.1rem;
+        color: #f5a623;
+        padding-left: 30px;
+      }
+
+      tr td:first-child {
+        text-align: center;
+        width: 10%;
+      }
+
+      tr:hover td {
+        background-color: rgba(245, 166, 35, 0.1);
+      }
+
+      /* Footer row */
+      tfoot td {
+        background-color: #f5a623;
+        color: #000;
+        font-weight: bold;
+        border: 1px solid #000;
+      }
+
+      tfoot td:first-child {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">Start<u>UP</u></div>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">AboutUs</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">LogIn</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- body content -->
+
+    <section class="introsection">
+      <div class="intro-text">
+        <h1 class="intro-header">Startup Landing Page</h1>
+        <p class="intro-content">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <button class="login-btn">Login</button>
+      </div>
+
+      <div class="intro-img">
+        <img
+          src="https://imageio.forbes.com/specials-images/imageserve/6904c49870035c729ec3c683/New-York-Times-Holds-Annual-DealBook-Summit/0x0.jpg?format=jpg&crop=6000,3374,x0,y0,safe&width=1440"
+          alt="Startup Image"
+        />
+      </div>
+    </section>
+    <section class="contactus-form">
+      <h1 class="contact-header">Contact Us</h1>
+      <form method="post" action="/submit_form">
+        <input type="text" placeholder="Name" /><br />
+        <input type="text" placeholder="Email" /><br />
+        <div class="num-city">
+          <input type="text" placeholder="Mobile Number" />
+          <input type="text" placeholder="City" />
+        </div>
+
+        <button type="submit" class="submit-btn">Submit</button>
+      </form>
+    </section>
+    <section class="table-section">
+      <table>
+        <thead>
+          <tr>
+            <th>SNO.</th>
+            <th>Startup Name</th>
+            <th>Startup Description</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>1.</td>
+            <td>WowIndia</td>
+            <td>A startup with WOW Ideas.</td>
+          </tr>
+          <tr>
+            <td>2.</td>
+            <td>Lorem Ipsum</td>
+            <td>Lorem Ipsum Text</td>
+          </tr>
+          <tr>
+            <td>3.</td>
+            <td>Lorem Ipsum</td>
+            <td>Lorem Ipsum Text</td>
+          </tr>
+          <tr>
+            <td>4.</td>
+            <td>Lorem Ipsum</td>
+            <td>Lorem Ipsum Text</td>
+          </tr>
+          <tr>
+            <td>5.</td>
+            <td>Lorem Ipsum</td>
+            <td>Lorem Ipsum Text</td>
+          </tr>
+          <tr>
+            <td>6.</td>
+            <td>Lorem Ipsum</td>
+            <td>Lorem Ipsum Text</td>
+          </tr>
+        </tbody>
+
+        <tfoot>
+          <tr>
+            <td>00.</td>
+            <td>Final Footer</td>
+            <td>Lorem Ipsum Text</td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+  </body>
+</html>
